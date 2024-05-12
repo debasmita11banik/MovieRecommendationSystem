@@ -10,6 +10,10 @@
 </head>
 
 <style>
+  table {
+    width: 100%;
+  }
+
   tr,
   th,
   td {
@@ -30,8 +34,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
-  <table border="1" class="dataframe mx-auto col-12">
+  {{ table_data | safe }}
+  <!-- <table border="1" class="dataframe mx-auto col-12">
     <thead>
       <tr>
         <th></th>
@@ -106,7 +110,7 @@
         <td>Drama hindi 6</td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
 </body>
 
 </html>
